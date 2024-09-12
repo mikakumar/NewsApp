@@ -1,0 +1,63 @@
+<nav class="navbar navbar-expand-lg ">
+    <a class="navbar-brand" href="#">
+      <img src="gnewslogo.png" alt="Logo" width="100" height="" class="d-inline-block align-text-top">
+      Navbar</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+  
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Categories
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">By Country</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">By Language</a>
+          </div>
+        </li>
+  
+      </ul>
+      <form (submit)="onSubmit()" class="form-inline my-2 my-lg-0">
+        <input [(ngModel)]="searchTerm" [ngModelOptions]="{standalone: true}"  class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button [routerLink]="['/search']" class="btn btn-light my-2 my-sm-0" type="submit">Search</button>
+      </form>
+    </div>
+  </nav>
+
+  
+    <ul class="nav justify-content-center">
+      <li class="nav-item">
+        <a class="nav-link active" [routerLink]="['/categories', 'general']">General</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active" [routerLink]="['/categories', 'world']">World</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active" [routerLink]="['/categories', 'nation']">Nation</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active" [routerLink]="['/categories', 'business']">Business</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active" [routerLink]="['/categories', 'technology']">Technology</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active" [routerLink]="['/categories', 'entertainment']">Entertainment</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active" [routerLink]="['/categories', 'sports']">Sports</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active" [routerLink]="['/categories', 'science']">Science</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active" [routerLink]="['/categories', 'health']">Health</a>
+      </li>
+    </ul>

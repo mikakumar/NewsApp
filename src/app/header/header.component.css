@@ -1,0 +1,16 @@
+nav{
+    background-image: linear-gradient(white, rgb(231, 228, 253));
+}
+
+nav .navbar-brand{
+    color: rgb(161, 118, 255);
+    font-weight: bold;
+}
+
+.nav-link{
+    color: rgb(131, 118, 255)
+}
+
+form > .btn{
+    color: rgb(246, 82, 219)
+}
